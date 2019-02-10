@@ -1,0 +1,29 @@
+.nunito-sans-font {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.body-background {
+    background-color: aqua;
+}
+
+.todolist-table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.todolist-table th {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: rgb(220, 220, 255);
+}
+
+.todolist-table td {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.btn-main {
+    margin: 8px 0;
+}
