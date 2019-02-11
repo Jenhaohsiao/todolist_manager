@@ -43,7 +43,7 @@
                                 </i>
                     </th>
                     <th>
-                        Title
+                        <span>Title</span>
                     </th>
 
                     <th>
@@ -56,6 +56,10 @@
                                 keyboard_arrow_down
                                 </i>
                     </th>
+
+                    <th>
+
+                    </th>
                 </tr>
 
             </tbody>
@@ -65,6 +69,51 @@
             </tbody>
         </table>
 
+        <!-- Edit Popup window -->
+
+
+        <div id="popupWindow" class="popupWindow  ">
+
+            <!-- popupEditWindow content -->
+            <div class="popupWindow-content ">
+
+                <div>
+                    <span class="close-btn" onclick="closePopup()">&times;</span>
+                </div>
+
+                <div style="clear: both;"></div>
+
+                <form>
+                    <div>
+                        <label for="title">Title</label>
+                        <input type="text" id="formTitle" name="title" class="popup_input">
+                    </div>
+
+                    <div>
+                        <label for="content">Content</label>
+                        <textarea id="formContent" class="popup_textarea"></textarea>
+                    </div>
+
+
+
+                    <div>
+                        <label for="process">Process <span id="processNumber"></span>%</label>
+                        <input id="processSlider" oninput="showProcessNumber(value)" class="process-slider" type="range" min="0" max="100" value="50">
+                    </div>
+
+
+                </form>
+                <div>
+                    <button class="save-btn" id="saveBtn" onClick="saveData()"> 
+                            <i class="material-icons ">save </i>
+                        </button>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Edit Popup window end -->
 
     </div>
 </body>
